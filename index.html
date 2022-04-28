@@ -5,12 +5,17 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-		<!-- TailwindCSS CDN -->
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<link rel="stylesheet" href="assets/css/custom.css" />
-
 		<!-- AOS CSS -->
 		<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+		<!-- Font Awesome -->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+			integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
 
 		<!-- Favicon -->
 		<link
@@ -19,9 +24,62 @@
 			type="image/x-icon"
 		/>
 
+		<!-- TailwindCSS CDN -->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/custom.css" />
+
 		<title>Arie Setiadi</title>
 	</head>
 	<body>
+		<!-- Header -->
+		<header
+			class="absolute py-1 flex top-0 left-0 w-full items-center z-10 lg:px-40 lg:py-2"
+			data-aos="fade-down"
+			data-aos-duration="1000"
+		>
+			<div class="container">
+				<div class="relative flex items-center justify-between">
+					<!-- Logo -->
+					<div class="px-5">
+						<a
+							href="#home"
+							class="inline-block text-2xl text-primary font-semibold border-2 p-2 rounded-full transition duration-300 ease-in-out hover:border-primary"
+						>
+							<span class="border-b-2 border-primary">A</span>
+						</a>
+					</div>
+
+					<!-- Hamburger Button -->
+					<button id="hamburger" class="px-5 absolute right-1 lg:hidden">
+						<span
+							class="transition-all duration-100 ease-in-out origin-top-left"
+						></span>
+						<span class="transition-all duration-100 ease-in-out"></span>
+						<span
+							class="transition-all duration-100 ease-in-out origin-bottom-left"
+						></span>
+					</button>
+
+					<!-- Nav Menu -->
+					<nav
+						id="nav-menu"
+						class="absolute hidden top-[110%] right-2 mt-1 w-[100px] bg-white shadow-sm rounded-md lg:block lg:bg-transparent lg:shadow-none lg:rounded-none lg:top-0"
+					>
+						<ul class="lg:flex">
+							<li>
+								<a href="#home">Home</a>
+							</li>
+							<li>
+								<a href="#about">About</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+			<!-- Logo -->
+		</header>
+		<!-- End Header -->
+
 		<!-- Home -->
 		<section id="home">
 			<div class="container" data-aos="fade-up" data-aos-duration="1000">
@@ -52,7 +110,9 @@
 						<h1 class="text-dark text-center text-4xl lg:text-5xl font-bold">
 							Arie Setiadi.
 						</h1>
-						<h2 class="text-secondary text-center lg:text-xl font-semibold">
+						<h2
+							class="text-secondary text-lg text-center lg:text-xl font-semibold"
+						>
 							Web Developer | Designer
 						</h2>
 
@@ -69,11 +129,163 @@
 				</div>
 			</div>
 		</section>
+		<!-- End Home -->
+
+		<!-- About -->
+		<section id="about">
+			<div class="container" data-aos="fade-up" data-aos-duration="1000">
+				<div class="flex flex-wrap lg:px-52 px-10 my-10">
+					<div class="w-full lg:w-1/2 lg:p-10">
+						<h1 class="inline-block text-primary font-semibold mb-3">
+							<span class="border-b-2 border-primary">A</span>bout
+						</h1>
+						<h2 class="text-2xl font-semibold mb-3 lg:mt-3">Tentang Saya</h2>
+						<p class="leading-relaxed">
+							Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+							Possimus, ipsa. Dignissimos deleniti mollitia numquam ipsum
+							reprehenderit et adipisci doloribus minus, molestiae, quibusdam
+							Dignissimos deleniti mollitia numquam ipsum reprehenderit et
+							adipisci doloribus minus, molestiae, quibusdam
+						</p>
+					</div>
+					<div class="w-full lg:w-1/2 lg:p-10">
+						<h1 class="inline-block text-white font-semibold mb-3">.</h1>
+						<h2 class="block text-2xl font-semibold mb-3 lg:mt-3">
+							<span class="border-b-2 border-primary">K</span>enal lebih dekat
+						</h2>
+						<p class="leading-relaxed">
+							Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+							Possimus, ipsa. Dignissimos deleniti mollitia numquam ipsum
+						</p>
+
+						<!-- Social Media -->
+						<div class="flex mt-5">
+							<!-- Github -->
+							<a
+								href="https://github.com/ariesetiadi-edu"
+								target="_blank"
+								class="mr-6 transition-all ease-in-out hover:animate-pulse hover:scale-125"
+							>
+								<i class="fa-brands fa-github fa-2x"></i>
+							</a>
+
+							<!-- Instagram -->
+							<a
+								href="https://www.instagram.com/tuariee/?hl=id"
+								target="_blank"
+								class="mr-6 transition-all ease-in-out hover:animate-pulse hover:scale-125"
+							>
+								<i class="fa-brands fa-instagram fa-2x"></i>
+							</a>
+							<!--  -->
+
+							<!-- Linkedin -->
+							<a
+								href="https://www.linkedin.com/in/arie-setiadi-156382213"
+								target="_blank"
+								class="mr-6 transition-all ease-in-out hover:animate-pulse hover:scale-125"
+							>
+								<i class="fa-brands fa-linkedin fa-2x"></i>
+							</a>
+
+							<!-- Facebook -->
+							<a
+								href="https://www.facebook.com/ariesetiadi.sm/"
+								target="_blank"
+								class="mr-6 transition-all ease-in-out hover:animate-pulse hover:scale-125"
+							>
+								<i class="fa-brands fa-facebook-square fa-2x"></i>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- End About -->
+
+		<!-- Projects -->
+		<section id="projects">
+			<div class="container">
+				<div
+					class="bg-slate-100 flex flex-wrap lg:px-52 px-10 my-10 mt-16 py-16"
+				>
+					<!-- Head -->
+					<div class="w-full justify-center">
+						<h1 class="block text-primary font-semibold mb-3 text-center">
+							<span class="border-b-2 border-primary">P</span>rojects
+						</h1>
+						<h2 class="block text-2xl font-semibold mb-5 lg:mt-3 text-center">
+							Project Terkini
+						</h2>
+					</div>
+
+					<!-- Project 1 Damamaya -->
+					<div class="w-full lg:w-1/2 lg:p-10 mb-5 lg:mb-0">
+						<img
+							class="rounded shadow-md lg:shadow-lg"
+							src="assets/img/projects/damamaya-dashboard.png"
+							alt="Damamaya"
+						/>
+						<h1 class="block font-semibold text-dark">Damamaya</h1>
+						<p class="text-secondary">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro,
+							tempora!
+						</p>
+					</div>
+
+					<!-- Project 2 Skripsi -->
+					<div class="w-full lg:w-1/2 lg:p-10 mb-5 lg:mb-0">
+						<img
+							class="rounded shadow-md lg:shadow-lg"
+							src="assets/img/projects/skripsi.png"
+							alt="Aplikasi Penjadwalan"
+						/>
+						<h1 class="block font-semibold text-dark">Aplikasi Penjadwalan</h1>
+						<p class="text-secondary">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. In
+							corrupti, dignissimos
+						</p>
+					</div>
+
+					<!-- Project 3 Pura Geger -->
+					<div class="w-full lg:w-1/2 lg:p-10 mb-5 lg:mb-0">
+						<img
+							class="rounded shadow-md lg:shadow-lg"
+							src="assets/img/projects/penglipuran.png"
+							alt="Penglipuran"
+						/>
+						<h1 class="block font-semibold text-dark">Company Profile</h1>
+						<p class="text-secondary">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro,
+							tempora!
+						</p>
+					</div>
+
+					<!-- Project 4 Puri -->
+					<div class="w-full lg:w-1/2 lg:p-10 mb-5 lg:mb-0">
+						<img
+							class="rounded shadow-md lg:shadow-lg"
+							src="assets/img/projects/puriagung.png"
+							alt="Puri Agung Kerambitan"
+						/>
+						<h1 class="block font-semibold text-dark">Company Profile II</h1>
+						<p class="text-secondary">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro,
+							tempora!
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- End Projects -->
 
 		<!-- AOS Script -->
 		<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 		<script>
 			AOS.init();
 		</script>
+
+		<!-- Main Script -->
+		<script src="assets/js/script.js"></script>
 	</body>
 </html>

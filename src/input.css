@@ -1,3 +1,40 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Hamburger Menu */
+#hamburger span {
+    @apply block w-[30px] h-[2px] my-2 bg-secondary
+}
+
+.hamburger-active > span:nth-child(1){
+    @apply rotate-45
+}
+
+.hamburger-active > span:nth-child(1){
+    @apply rotate-45
+}
+
+.hamburger-active > span:nth-child(2){
+    @apply opacity-0
+}
+
+.hamburger-active > span:nth-child(3){
+    @apply -rotate-45
+}
+
+/* Navbar Fixed */
+.navbar-fixed {
+    @apply fixed z-50 bg-white bg-opacity-70 drop-shadow shadow-dark;
+    backdrop-filter: blur(5px);
+}
+
+/* Navmenu Hover */
+#nav-menu li{
+    @apply my-2 px-5
+}
+#nav-menu li:hover{
+    @apply text-primary
+}
+
+
